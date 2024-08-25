@@ -21,59 +21,26 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Personal Planner',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
-          primary: Colors.deepPurple,
-          secondary: Colors.deepOrange,
-          background: Colors.white,
-          surface: Colors.white,
-        ),
-        textTheme: const TextTheme(
-            displayLarge: TextStyle(
-                fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),
-            displayMedium: TextStyle(
-                fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white),
-            displaySmall: TextStyle(
-                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
-            headlineLarge: TextStyle(
-                fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
-            headlineMedium: TextStyle(
-                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
-            titleLarge: TextStyle(
-                fontSize: 18, fontWeight: FontWeight.w600, color: Colors.white),
-            titleMedium: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-                color: Colors.purple),
-            bodyLarge: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.normal,
-                color: Colors.black87),
-            bodyMedium: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.normal,
-                color: Colors.black87),
-            bodySmall: TextStyle(
-                fontSize: 10,
-                fontWeight: FontWeight.normal,
-                color: Colors.black87),
-            labelLarge: TextStyle(
-                fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white),
-            labelMedium: TextStyle(fontSize: 12, color: Colors.white),
-            labelSmall: TextStyle(fontSize: 10, color: Colors.white)),
-        useMaterial3: true,
+        primarySwatch: Colors.deepPurple,
+        brightness: Brightness.light,
+        scaffoldBackgroundColor: Colors.white,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.deepPurple,
           titleTextStyle: TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w600, color: Colors.white),
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+            color: Colors.white,
+          ),
           iconTheme: IconThemeData(color: Colors.white),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.deepPurple,
-            foregroundColor: Colors.white, // Setzt die Textfarbe auf Weiß
-            textStyle:
-                const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            foregroundColor: Colors.white,
+            textStyle: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
           ),
         ),
         inputDecorationTheme: const InputDecorationTheme(
@@ -81,9 +48,46 @@ class MyApp extends StatelessWidget {
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.deepPurple),
           ),
-          labelStyle: TextStyle(
-              color: Colors.black87), // Label-Farbe auf Schwarz gesetzt
+          labelStyle: TextStyle(color: Colors.deepPurple),
         ),
+        textTheme: const TextTheme(
+          displayLarge: TextStyle(
+              color: Colors.deepPurple,
+              fontSize: 32,
+              fontWeight: FontWeight.bold),
+          displayMedium: TextStyle(
+              color: Colors.deepPurple,
+              fontSize: 28,
+              fontWeight: FontWeight.bold),
+          displaySmall: TextStyle(
+              color: Colors.deepPurple,
+              fontSize: 24,
+              fontWeight: FontWeight.bold),
+          headlineMedium: TextStyle(
+              color: Colors.deepPurple,
+              fontSize: 22,
+              fontWeight: FontWeight.bold),
+          headlineSmall: TextStyle(
+              color: Colors.deepPurple,
+              fontSize: 20,
+              fontWeight: FontWeight.bold),
+          titleLarge: TextStyle(
+              color: Colors.deepPurple,
+              fontSize: 18,
+              fontWeight: FontWeight.w600),
+          bodyLarge: TextStyle(color: Colors.black87, fontSize: 16),
+          bodyMedium: TextStyle(color: Colors.black87, fontSize: 14),
+          labelLarge: TextStyle(
+              color: Colors.deepPurple,
+              fontSize: 14,
+              fontWeight: FontWeight.w600),
+        ),
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.deepPurple,
+        ).copyWith(
+          secondary: Colors.deepOrange,
+        ),
+        useMaterial3: true,
       ),
       home: StreamBuilder<User?>(
         stream: FirebaseAuth.instance.authStateChanges(),
