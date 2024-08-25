@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyD0bNb0yR8ObeVc0RqPNzw7PzN667nOu2E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>725932365866</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.personalPlannerApp</string>
+	<key>PROJECT_ID</key>
+	<string>personal-planer-f802e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>personal-planer-f802e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:725932365866:ios:99d6a73e8110fce3a58b53</string>
+</dict>
+</plist>

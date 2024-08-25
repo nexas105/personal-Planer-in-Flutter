@@ -1,0 +1,64 @@
+# Flutter/Dart spezifische Dateien
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/ios/Flutter/.last_build_id
+.dart_tool/
+.idea/
+.vscode/
+android/.gradle/
+android/key.properties
+*.iml
+
+# Android spezifische Dateien
+android/local.properties
+**/android/key.properties
+**/android/app/google-services.json
+
+# iOS spezifische Dateien
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/App.framework
+ios/Flutter/Flutter.podspec
+**/ios/GoogleService-Info.plist
+
+# Firebase spezifische Dateien
+**/ios/GoogleService-Info.plist
+**/android/app/google-services.json
+
+# Umgebungsdateien
+.env
+
+# VS Code spezifische Dateien
+.vscode/
+
+# Andere unnötige Dateien
+*.log
+*.lock
+*.bak
+*.swp
+*.tmp
+*.DS_Store
+*.apk
+*.crash
+*.doc
+*.pdf
+*.tar
+*.zip
+*.7z
+*.jar
+*.war
+*.exe
+*.out
+
+# Ignoriere die Mac-spezifischen Dateien
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ordner "Documents" ignorieren, außer er enthält explizit erwünschte Dateien
+Documents/
